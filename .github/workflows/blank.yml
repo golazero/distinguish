@@ -34,3 +34,10 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+- name: Lint Markdown
+  # You may pin to the exact commit or the version.
+  # uses: tomwhross/write-good-action@505c79e7272f48209af9f4d6c3fdb3f769be2cdf
+  uses: tomwhross/write-good-action@v1.5
+  with:
+    # Name of Directory to scan with write-good [default is "."]
+    directory: # optional, default is .
